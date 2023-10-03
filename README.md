@@ -53,4 +53,4 @@ The models are saved in the `results` folder and the scores in the `logs/results
 ```
 python preprocessing_citycam.py <path_to_the_citycam_dataset_on_your_labtop>
 ```
-To run the OOD detction experiments, please download the test file of the SVHN dataset [here](http://ufldl.stanford.edu/housenumbers/test_32x32.mat), and store the file in the `datasets/svhn/` folder
+To run the OOD detction experiments, please download the test file of the SVHN dataset [here](http://ufldl.stanford.edu/housenumbers/test_32x32.mat), and store the file in the `datasets/svhn/` folder. For the CIFAR10 experiments, ResNet32 networks should first be pre-trained using the `configs/cifar10.yml` config file.
