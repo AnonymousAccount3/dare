@@ -1,0 +1,7 @@
+loss: MeanSquaredErrorClassif
+params:
+    threshold: DeepEnsembleMSE
+callbacks_params:
+    monitor: val_loss
+    threshold: DeepEnsembleMSE
+ood_score_func: mean_squared_entropy

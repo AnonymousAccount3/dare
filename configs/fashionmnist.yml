@@ -1,0 +1,20 @@
+name: fashionmnist
+
+n_estimators: 5
+epochs: 50
+batch_size: 128
+steps_per_epoch: 100
+network: DenseNet
+network_params:
+    last_units: 10
+    units: 100
+    layers: 3
+    activation: "relu"
+    last_activation: null
+optimizer: Adam
+optimizer_params:
+    lr: 0.001
+callbacks: ModelCheckpoint
+loss: SparseCategoricalCrossentropy
+metrics: [acc]
+ood_score_func: entropy

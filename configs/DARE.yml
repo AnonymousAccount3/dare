@@ -1,0 +1,5 @@
+params:
+    threshold: DeepEnsemble
+callbacks_params:
+    monitor: val_loss
+    threshold: DeepEnsemble

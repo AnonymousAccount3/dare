@@ -1,0 +1,8 @@
+params:
+    - lambda_: 0.0
+    - lambda_: 0.00001
+    - lambda_: 0.0001
+    - lambda_: 0.001
+    - lambda_: 0.01
+    - lambda_: 0.1
+    - lambda_: 1

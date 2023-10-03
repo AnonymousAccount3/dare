@@ -1,0 +1,18 @@
+name: 2d_classif
+
+n_estimators: 20
+epochs: 100
+batch_size: 32
+steps_per_epoch: 200
+network: DenseNet
+network_params:
+    layers: 3
+    last_units: 1
+    activation: "relu"
+    last_activation: null
+optimizer: Adam
+optimizer_params:
+    lr: 0.001
+callbacks: ModelCheckpoint
+loss: BinaryCrossentropy
+ood_score_func: entropy

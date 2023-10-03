@@ -1,0 +1,19 @@
+name: cifar10
+
+n_estimators: 1
+epochs: 150
+batch_size: 128
+steps_per_epoch: 2000
+network: ResNet32
+optimizer: SGD
+optimizer_params:
+    momentum: 0.9
+    nesterov: False
+schedule: PiecewiseConstantDecay
+schedule_params:
+    values: [0.01, 0.1, 0.01, 0.001]
+    boundaries: [400, 32000, 48000]
+callbacks: ModelCheckpoint
+loss: SparseCategoricalCrossentropy
+metrics: [acc]
+ood_score_func: entropy

@@ -1,0 +1,4 @@
+network_params:
+    last_units: 1
+    last_activation: null
+loss: MeanSquaredError

@@ -1,0 +1,2 @@
+loss: MeanSquaredErrorClassif
+ood_score_func: mean_squared_entropy
